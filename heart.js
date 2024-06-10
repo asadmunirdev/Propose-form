@@ -2,6 +2,7 @@ const yesButton = document.getElementById("yes");
 const noButton = document.getElementById("no");
 const cta = document.querySelector(".buttons");
 const form = document.querySelector("form");
+const bgMusic = document.getElementById("bg-music");
 
 noButton.addEventListener("click", () => {
   const yesIndex = Array.from(cta.children).indexOf(yesButton);
@@ -24,4 +25,6 @@ yesButton.addEventListener("click", () => {
   heart.style.justifyContent = "center";
   heart.style.alignItems = "center";
   heart.style.height = "100%";
+
+  bgMusic.play();
 });
